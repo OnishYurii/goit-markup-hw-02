@@ -1,17 +1,26 @@
 :root {
-    --dark: #2E2F42;
+    --dark-color: #2E2F42;
 }
 
 :root {
-    --text: #434455;
+    --text-color: #434455;
 }
 
 :root {
-    --primary-brand: #4D5AE5;
+    --primary-brand-color: #4D5AE5;
+}
+
+:root {
+    --white-color: #FFFFFF;
+}
+
+:root {
+    --pressed-state-color: #404BBF;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
 }
 
 .link {
@@ -24,7 +33,7 @@ body {
 
 
 .body-medium {
-    color: var(--dark) 
+    color: var(--dark-color); 
     font-weight: 500; 
     font-size: 16px ;
     line-height: 0.66; 
@@ -32,15 +41,22 @@ body {
 }
 
 .body-small {
-  color: var(--text); 
+  color: var(--text-color);
   font-size: 12px; 
   line-height: 0.86; 
   letter-spacing: 0.04em;
 }
 
+.button-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0.66;
+    letter-spacing: 0.04;
+}
+
 /* *-----Header----- */
 .header-logo {
-    color:  var(--dark);
+    color:  var(--dark-color);
         font-size: 18px;
         font-family: Raleway;
         font-weight: 800;
@@ -50,9 +66,48 @@ body {
 }
 
 .header-logo-accent {
-    color: var(--primary-brand)
+    color: var(--primary-brand-color)
+}
+
+.header-menu-item:hover,
+.header-menu-item:focus {
+    color: var(--pressed-state-color);
 }
 
 .head-address {
     font-style: normal;
 }
+
+.head-address-link:hover,
+.head-address-link:focus {
+    color: var(--pressed-state-color);
+}
+
+/** ------Solution------ */
+.solution {
+    background-color: var(--dark-color);
+}
+
+.solution-title {
+    color: var(--white-color);
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 0.93;
+    letter-spacing: 0.02em;
+}
+
+.solution-btn {
+    color: var(--white-color);
+    cursor: pointer;
+    background-color: var(--primary-brand-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.solution-btn:hover,
+.solution-btn:focus {
+    color: var(--pressed-state-color);
+}
+
+/* *-------Benefits------- */
