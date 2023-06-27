@@ -1,7 +1,58 @@
+:root {
+    --dark: #2E2F42;
+}
+
+:root {
+    --text: #434455;
+}
+
+:root {
+    --primary-brand: #4D5AE5;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    color: #434455;
-    font-size: 16px;
-    letter-spacing: 2%;
-    line-height: 1.5;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+}
+
+
+.body-medium {
+    color: var(--dark) 
+    font-weight: 500; 
+    font-size: 16px ;
+    line-height: 0.66; 
+    letter-spacing: 0.02em;
+}
+
+.body-small {
+  color: var(--text); 
+  font-size: 12px; 
+  line-height: 0.86; 
+  letter-spacing: 0.04em;
+}
+
+/* *-----Header----- */
+.header-logo {
+    color:  var(--dark);
+        font-size: 18px;
+        font-family: Raleway;
+        font-weight: 800;
+        line-height: 0.86;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+}
+
+.header-logo-accent {
+    color: var(--primary-brand)
+}
+
+.head-address {
+    font-style: normal;
 }
